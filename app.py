@@ -16,8 +16,8 @@ def car_list():
                             headers = {"accept": "application/json; charset=utf-8", "Content-Type": "application/json; charset=utf-8",
                                          "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYXJvQGNhcm8uY28ua3IiLCJhdWQiOiJhdXRoVG9rZW47Rk1TVXNlcjsiLCJpYXQiOjE2MjYyNDc0MTEsImV4cCI6MTYyODgzOTQxMSwiY29tcGFueV9pZCI6MTA0LCJicmFuY2hfaWQiOjQwMn0.KEeSQ4BIMNIXXapF7zCkXGVwYDydlejuS3bkZoZQIsw"},
                             )
-    print(response.status_code)
-    return 'success'
+    return print(str(response.status_code))
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
