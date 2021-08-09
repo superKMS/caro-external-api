@@ -5,9 +5,9 @@ app = Flask(__name__)
 def hello():
     return "success"
 
-# @app.route("/car-list")
-# def car_list():
-#     return "car-list"
+@app.route("/car-list")
+def car_list():
+    return "car-list"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
